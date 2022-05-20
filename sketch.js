@@ -271,9 +271,9 @@ function blockNext() {
 function keyPressed() {
   if (keyCode === UP_ARROW) {     // 上キー 回転
     //if (!block_check(2) && !block_check(3)) {
-      if (!block_kinds === BLOCK_O) {
+      //if (!block_kinds === BLOCK_O) {
           block_kinds = blockRotate();
-      }
+      //}
   }
   if (keyCode === DOWN_ARROW) {   // 下キー 落ちる速度をあげる
     //y = y + 3;
