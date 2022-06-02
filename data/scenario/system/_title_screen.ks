@@ -1,4 +1,4 @@
-[image layer=1  storage="default/lodomati.gif" x=0 y=0 visible=true]
+[image layer=1  storage="./data/bgimage/lodomati.gif" x=0 y=0 visible=true]
 
 [preload  storage="./data/bgimage/title.jpg"  ]
 
