@@ -12,7 +12,7 @@
 「えぇーーーーーっ！？　廃部！？　部室も道具もあるのに！？」[l][r]
 [_tb_end_text]
 
-[bg  time="1000"  method="fadeIn"  storage="room2.jpg"  ]
+[bg  time="1000"  method="fadeIn"  storage="room-evening.jpg"  cross="true"  ]
 [cm  ]
 [tb_start_text mode=2 ]
 #
@@ -73,7 +73,7 @@
 [_tb_end_text]
 
 [live2d_hide  name="oda"  ]
-[bg  time="1000"  method="fadeIn"  storage="rouka.jpg"  ]
+[bg  time="1000"  method="fadeIn"  storage="corridor-day.jpg"  cross="true"  ]
 [live2d_show  name="oda"  x="0.62"  y="-0.31"  scale="1.39"  ]
 [tb_start_text mode=1 ]
 #千石陽翔
