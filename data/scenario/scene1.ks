@@ -3,7 +3,6 @@
 [live2d_new  model_id="oda"  breath="true"  lip_time="100"  lip="true"  jname="千石陽翔"  ]
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="100"  lip="true"  jname="先生"  ]
 [cm  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="music.m4a"  ]
 [bg  time="1000"  method="crossfade"  storage="title.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=2 ]
