@@ -1,7 +1,5 @@
-[_tb_system_call storage=system/_preview.ks ]
+[_tb_system_call storage=system/_scene2b.ks]
 
-[mask time=10]
-[mask_off time=10]
 [live2d_new  model_id="ishi"  breath="true"  lip_time="100"  jname="先輩女子"  lip="true"  ]
 [live2d_new  model_id="oda"  breath="true"  lip_time="100"  jname="千石陽翔"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
