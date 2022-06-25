@@ -1,4 +1,4 @@
-
+[_tb_system_call storage=system/_scene2d.ks]
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="fadeIn"  storage="schoolgate-day.jpg"  ]

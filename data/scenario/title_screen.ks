@@ -1,4 +1,4 @@
-
+[_tb_system_call storage=system/_title_screen.ks]
 
 [hidemenubutton]
 
@@ -6,7 +6,7 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
-[bg  storage="bg_base.png"  method="fadeIn"  ]
+[bg  storage="home-day.jpg"  method="fadeIn"  ]
 *title
 
 [glink  color="black"  text="はじめから"  x="947"  y="393"  size="20"  target="*start"  width=""  height=""  _clickable_img=""  ]

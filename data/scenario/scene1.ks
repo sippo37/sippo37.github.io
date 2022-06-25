@@ -1,8 +1,7 @@
-
+[_tb_system_call storage=system/_scene1.ks]
 
 [live2d_new  model_id="oda"  breath="true"  lip_time="100"  lip="true"  jname="千石陽翔"  ]
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="100"  lip="true"  jname="先生"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="music.ogg"  ]
 [bg  time="1000"  method="crossfade"  storage="title.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=2 ]
