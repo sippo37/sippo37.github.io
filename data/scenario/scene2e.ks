@@ -1,4 +1,4 @@
-[_tb_system_call storage=system/_scene2e.ks]
+
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="crossfade"  storage="koutei.jpg"  ]
