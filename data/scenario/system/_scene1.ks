@@ -1,4 +1,3 @@
-[preload  storage="./data/bgimage/sora-evening.jpg"  ]
-[preload  storage="./data/bgimage/room-evening.jpg"  ]
-[preload  storage="./data/bgimage/corridor-day.jpg"  ]
+[preload  storage="./data/bgimage/BG06a_80.jpg"  ]
+[preload  storage="./data/fgimage/default/kokuban2.png"  ]
 [return]
