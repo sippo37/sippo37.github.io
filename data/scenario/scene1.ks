@@ -1,4 +1,4 @@
-[_tb_system_call storage=system/_scene1.ks]
+
 
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
 [cm  ]
