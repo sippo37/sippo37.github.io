@@ -1,2 +1,3 @@
-[preload  storage="./data/bgimage/a.jpg"  ]
+[preload  storage="./data/bgimage/BG06a_80.jpg"  ]
+[preload  storage="./data/fgimage/default/kokuban2.png"  ]
 [return] 

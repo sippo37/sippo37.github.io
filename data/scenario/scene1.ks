@@ -1,21 +1,70 @@
 
 
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
-[bg  storage="BG06a_80.jpg"  time="0"  ]
+[bg  storage="BG06a_80.jpg"  time="500"  ]
 [tb_show_message_window  ]
 [live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
-[camera  time="1000"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  ]
+[camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
 [tb_start_text mode=1 ]
 #職員
 ようこそ、アップル梅田へ！[p]
 [_tb_end_text]
 
-[tb_start_text mode=2 ]
+[tb_start_text mode=1 ]
 #職員
-まずはあなたの事を教えてね！[l][r]
+見学に来てくれてありがとう[p]
 [_tb_end_text]
 
-[camera  time="600"  zoom="1"  wait="true"  y="0"  x="-0.5"  rotate="0"  ]
+[tb_start_text mode=1 ]
+#職員
+まずは、簡単に、就労移行支援と、アップル梅田について説明させていただきます[p]
+[_tb_end_text]
+
+[tb_start_text mode=1 ]
+#職員
+就労移行支援について[p]
+[_tb_end_text]
+
+[tb_start_text mode=2 ]
+#職員
+「一般企業に就職したい」障がい者の方をサポートする福祉サービスです[l][r]
+利用者の得意にあった職場探しをサポートします[l][r]
+
+[_tb_end_text]
+
+[cm  ]
+[tb_start_text mode=1 ]
+#職員
+アップル梅田について[p]
+[_tb_end_text]
+
+[tb_start_text mode=2 ]
+#職員
+アップル梅田では、「ひとりひとりのストーリーを大切に」の気持ちで[l][r]
+２０１７年のオープン時から運営してきました。[l][r]
+ひとりひとり、進むスピード、働きたい仕事、知識、スキルには違いがありますが[l][r]
+スタッフと利用者の会話を通じて作り上げながら、支援をおこなっています。[l][r]
+[_tb_end_text]
+
+[tb_start_text mode=2 ]
+#職員
+ざっと簡単に説明させていただきました。[l][r]
+アップル梅田のホームページもあるから良かったら見てくださいね[l][r]
+[_tb_end_text]
+
+[cm  ]
+[tb_start_text mode=1 ]
+#職員
+次はあなたの事についても教えてほしいな[p]
+[_tb_end_text]
+
+[tb_start_text mode=2 ]
+#職員
+今から簡単な入力フォームが表示されるから[l][r]
+入力してみてね[l][r]
+[_tb_end_text]
+
+[camera  time="600"  zoom="1"  wait="true"  y="0"  x="-0.5"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
 [tb_start_text mode=1 ]
 #
 [_tb_end_text]

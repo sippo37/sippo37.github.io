@@ -1,4 +1,8 @@
 ;=========キャラクター事前定義情報 
+;ながい
+[chara_new  name="ながい"  jname="ながい"  storage="chara/1/18.10.02d.png"  ]
+;おだ
+[chara_new  name="おだ"  jname="おだ"  storage="chara/2/18.10.02e.png"  ]
 
 ;=========変数宣言部分 
 [iscript] 
