@@ -77,7 +77,7 @@
 [position layer=message0 width=370 height=200 top=20 left=900 color=black opacity=180 radius=5]
 [_tb_end_tyrano_code]
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_12"  x="-6"  _clickable_img=""  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_23"  x="-6"  _clickable_img=""  ]
 *個人情報
 
 [tb_ptext_show  x="40"  y="50"  size="25"  color="0xffffff"  time="1"  text="氏名(フルネーム)"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -92,6 +92,9 @@
 [tb_ptext_show  x="40"  y="470"  size="25"  color="0xffffff"  time="1"  text="所属する団体"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="40"  y="510"  size="25"  color="0xffffff"  time="1"  text="LINEのID（任意）"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="40"  y="550"  size="25"  color="0xffffff"  time="1"  text="LINEグループチャットへの招待"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="536"  y="513.0000228881836"  size="15"  color="0xffffff"  time="1"  text="個人情報について、不正アクセス、"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="536"  y="537.0000228881836"  size="15"  color="0xffffff"  time="1"  text="紛失、漏洩等がないように管理します"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[tb_image_show  time="1"  storage="default/QR.png"  width="60"  height="60"  x="417"  y="558"  _clickable_img=""  ]
 [edit  left="250"  top="50"  width="200"  height="30"  size="20"  maxchars="15"  name="f.name"  ]
 [edit  left="580"  top="50"  width="205"  height="30"  size="20"  maxchars="15"  name="f.furigana"  ]
 [edit  left="250"  top="90"  width="200"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
