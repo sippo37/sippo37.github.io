@@ -3,7 +3,7 @@
 [mask time=10]
 [mask_off time=10]
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
-[bg  storage="BG06a_80.jpg"  time="500"  ]
+[bg  storage="office-chairs.jpg"  time="500"  ]
 [tb_show_message_window  ]
 [live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
