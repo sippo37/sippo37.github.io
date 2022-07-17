@@ -11,7 +11,7 @@
 [layermode_movie name="test" video=haikei.mp4 time=1500 wait=true]
 [_tb_end_tyrano_code]
 
-[glink  color="black"  text="開始"  x="565"  y="337"  size="20"  target="*開始"  width=""  height=""  _clickable_img=""  ]
+[glink  color="black"  text="はじまり"  x="565"  y="337"  size="20"  target="*開始"  width=""  height=""  _clickable_img=""  ]
 [s  ]
 *開始
 
