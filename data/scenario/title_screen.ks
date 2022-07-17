@@ -5,10 +5,9 @@
 [tb_clear_images]
 
 [tb_keyconfig  flag="0"  ]
-[tb_hide_message_window  ]
 [bg  time="0"  method="crossfade"  storage="a2.jpg"  ]
 [tb_start_tyrano_code]
-[layermode_movie name="test" video=haikei.mp4 time=1500 wait=true]
+[layermode_movie name="test" video=haikei.mp4 time=0 wait=true]
 [_tb_end_tyrano_code]
 
 [glink  color="black"  text="はじまり"  x="565"  y="337"  size="20"  target="*開始"  width=""  height=""  _clickable_img=""  ]
