@@ -5,7 +5,7 @@
 [tb_clear_images]
 
 [tb_keyconfig  flag="0"  ]
-[bg  time="500"  method="fadeIn"  storage="a2.jpg"  ]
+[bg  time="0"  method="fadeIn"  storage="a2.jpg"  ]
 [tb_start_tyrano_code]
 [layermode_movie name="test" video=haikei.mp4 time=500 wait=true]
 [_tb_end_tyrano_code]
