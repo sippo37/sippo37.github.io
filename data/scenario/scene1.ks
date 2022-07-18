@@ -277,25 +277,53 @@ delete link;
 あなたの名前は [emb exp="f.name"] さんですね。宜しくお願いします[p]
 [_tb_end_tyrano_code]
 
+*動画再生
+
 [tb_start_text mode=2 ]
 #職員
 今からアップル梅田での一日の流れを動画で見て頂きます。[l][r]
 それではご覧ください。[l][r]
 [_tb_end_text]
 
-[stopbgm  time="1000"  ]
 [tb_start_tyrano_code]
-[movie storage="apple.mp4" volume="100"]
+[movie storage="apple.mp4" volume="100" skip=true loop=false]
 [_tb_end_tyrano_code]
 
 [cm  ]
+*undefined
+
 [tb_start_text mode=1 ]
 #職員
 ご視聴ありがとうございました。[p]
 [_tb_end_text]
 
+*作品
+
 [tb_start_text mode=2 ]
 #職員
+続いてアップル梅田の利用者さんが製作したプログラムを紹介します。[l][r]
+新しいページが開くのでそちらをみてください。[l][r]
+また見終わったら、こちらのページに戻ってきてください[l][r]
+[_tb_end_text]
+
+[cm  ]
+[tb_start_text mode=1 ]
+#職員
+それでは作品をご覧ください[p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[web url="https://apple-oda.github.io/"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
+#職員
+作品を見終わったら、こちらのページに戻ってきてください[p]
+[_tb_end_text]
+
+[tb_start_text mode=2 ]
+#職員
+ありがとうございました[l][r]
 以上で私からのご案内は終わらせて頂きます[l][r]
 次は職員からの面談となります[l][r]
 呼び出しブザーを鳴らすか、職員に声をかけてください[l][r]
