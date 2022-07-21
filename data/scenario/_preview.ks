@@ -4,6 +4,7 @@
 [mask_off time=10]
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
 [bg  storage="office-chairs.jpg"  time="500"  ]
+[jump  storage="scene1.ks"  target="*個人情報"  ]
 [tb_show_message_window  ]
 [live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
@@ -79,70 +80,43 @@
 [position layer=message0 width=370 height=200 top=20 left=900 color=black opacity=180 radius=5]
 [_tb_end_tyrano_code]
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_23"  x="-6"  _clickable_img=""  ]
 *個人情報
 
-[tb_ptext_show  x="40"  y="50"  size="25"  color="0xffffff"  time="1"  text="氏名(フルネーム)"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="470"  y="50"  size="25"  color="0xffffff"  time="1"  text="ふりがな"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="90"  size="25"  color="0xffffff"  time="1"  text="住所(市町村まで)"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="470"  y="90"  size="25"  color="0xffffff"  time="1"  text="電話"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="470"  y="130"  size="25"  color="0xffffff"  time="1"  text="メ&nbsp;ー&nbsp;ル"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="135"  size="25"  color="0xffffff"  time="1"  text="アップル梅田を利用する目的"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="280"  size="25"  color="0xffffff"  time="1"  text="アップル梅田を知ったキッカケ（紹介先）"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="430"  size="25"  color="0xffffff"  time="1"  text="年齢"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="180"  y="430"  size="25"  color="0xffffff"  time="1"  text="性別"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="470"  size="25"  color="0xffffff"  time="1"  text="所属する団体"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="510"  size="25"  color="0xffffff"  time="1"  text="LINEのID（任意）"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="550"  size="25"  color="0xffffff"  time="1"  text="LINEグループチャットへの招待"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="536"  y="513.0000228881836"  size="15"  color="0xffffff"  time="1"  text="個人情報について、不正アクセス、"  anim="false"  face="sans-serif,'メイリオ'"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="536"  y="537.0000228881836"  size="15"  color="0xffffff"  time="1"  text="紛失、漏洩等がないように管理します"  anim="false"  face="sans-serif,'メイリオ'"  edge="undefined"  shadow="undefined"  ]
-[tb_image_show  time="1"  storage="default/QR.png"  width="60"  height="60"  x="417"  y="558"  _clickable_img=""  ]
-[edit  left="250"  top="50"  width="200"  height="30"  size="20"  maxchars="15"  name="f.name"  ]
-[edit  left="580"  top="50"  width="205"  height="30"  size="20"  maxchars="15"  name="f.furigana"  ]
-[edit  left="250"  top="90"  width="200"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_25"  x="-6"  _clickable_img=""  ]
+[tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="40"  y="80"  size="23"  color="0xffffff"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="85"  y="82"  size="20"  color="0xffffff"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="115"  size="23"  color="0xffffff"  time="1"  text="ふりがな"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="150"  size="23"  color="0xffffff"  time="1"  text="電話番号"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="185"  size="23"  color="0xffffff"  time="1"  text="住所"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="450"  y="80"  size="23"  color="0xffffff"  time="1"  text="性別"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="450"  y="115"  size="23"  color="0xffffff"  time="1"  text="年齢"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="450"  y="150"  size="23"  color="0xffffff"  time="1"  text="メール"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="25"  y="220"  size="23"  color="0xffffff"  time="1"  text="●アップル梅田を知ったきっかけ"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="370"  y="223"  size="20"  color="0xffffff"  time="1"  text="（紹介先）"  anim="false"  face="sans-serif,'メイリオ'"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="470"  y="220"  size="23"  color="0xffffff"  time="1"  text="●アップル梅田を利用する目的"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="25"  y="480"  size="23"  color="0xffffff"  time="1"  text="●ＬINEグループチャットへの招待"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="210"  y="540"  size="23"  color="0xffffff"  time="1"  text="LINE&nbsp;ID"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="300"  y="543"  size="18"  color="0xffffff"  time="1"  text="（任意）"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="476.0000183582306"  y="487.0000228881836"  size="18"  color="0xffffff"  time="1"  text="LINEを開設しました！"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="470.0000183582306"  y="516.0000228881836"  size="18"  color="0xffffff"  time="1"  text="よろしければLINE登録お願いします‼"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[edit  left="230"  top="80"  width="205"  height="30"  size="20"  maxchars="15"  name="f.name"  reflect="false"  ]
+[edit  left="230"  top="115"  width="205"  height="30"  size="20"  maxchars="15"  name="f.furigana"  reflect="undefined"  ]
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.tel{resize: none; position:absolute; left:580px; top:90px; width:205px; height: 30px;  font-size:20px; }
+.tel{resize: none; position:absolute; left:230px; top:150px; width:205px; height: 30px;  font-size:20px; }
 </style>
 <input type="tel" class="tel" id="tel" onInput="checkForm(this)">
 [endhtml]
 [_tb_end_tyrano_code]
 
-[edit  left="580"  top="130"  width="205"  height="30"  size="20"  maxchars="30"  name="f.mail"  ]
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-textarea#kengaku {resize: none; position:absolute; left:42px; top:170px; font-size:20px; padding: 5px 0px 5px 1px;}
-</style>
-<textarea cols="70" rows="4" style="overflow:scroll;" id="kengaku">
-[endhtml]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[html]
-<style type="text/css">
-textarea#kikake {resize: none; position:absolute; left:42px; top:315px; font-size:20px; padding: 5px 0px 5px 1px;}
-</style>
-<textarea cols="70" rows="4" style="overflow:scroll;" id="kikake">
-[endhtml]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[html]
-<style type="text/css">
-.age{resize: none; position:absolute; left:100px; top:430px; width:50px; height: 30px;  font-size:20px; }
-</style>
-<input type="number" class="age" id="age" onInput="checkForm(this)">
-[endhtml]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[html]
-<style type="text/css">
-.sex1{ position:absolute; left:250px; top:432px; width:40px; height: 40px; font-size: 20px; color:white;}
-.sex2{ position:absolute; left:300px; top:432px; width:40px; height: 40px; font-size: 20px; color:white;}
-.sex3{ position:absolute; left:350px; top:432px; width:40px; height: 40px; font-size: 20px; color:white;}
+.sex1{ position:absolute; left:550px; top:80px; width:40px; height: 40px; font-size: 20px; color:white;}
+.sex2{ position:absolute; left:600px; top:80px; width:40px; height: 40px; font-size: 20px; color:white;}
+.sex3{ position:absolute; left:650px; top:80px; width:40px; height: 40px; font-size: 20px; color:white;}
 </style>
 <label class="sex1">
 <input type="radio" name="sex" value="男">男
@@ -156,23 +130,108 @@ textarea#kikake {resize: none; position:absolute; left:42px; top:315px; font-siz
 [endhtml]
 [_tb_end_tyrano_code]
 
-[edit  left="250"  top="470"  width="530"  height="30"  size="20"  maxchars="200"  name="f.syozok"  ]
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.lineid{resize: none; position:absolute; left:250px; top:510px; width:200px; height: 30px;  font-size:20px; }
+.age{resize: none; position:absolute; left:540px; top:115px; width:50px; height: 30px;  font-size:20px; }
 </style>
-<input type="text" class="lineid" id="lineid" onInput="checkForm(this)">
+<input type="number" class="age" id="age" onInput="checkForm(this)">
 [endhtml]
 [_tb_end_tyrano_code]
 
+[edit  left="540"  top="150"  width="250"  height="30"  size="20"  maxchars="30"  name="f.mail"  ]
+[edit  left="230"  top="185"  width="560"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.check1{ position:absolute; left:50px; top:255px; width:80px; height: 40px; font-size: 20px; color:white;}
+.check1a{ position:absolute; left:110px; top:255px; width:80px; height: 40px; font-size: 20px; color:white;}
+</style>
+<label class="check1">
+<input type="radio" name="check1" value="ＨＰ">ＨＰ
+</label>
+<label class="check1a">
+<input type="radio" name="check1" value="学校">学校
+</label>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[edit  left="210"  top="255"  width="250"  height="30"  size="20"  maxchars="200"  name="f.syokai1"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.check2{ position:absolute; left:50px; top:290px; width:140px; height: 40px; font-size: 20px; color:white;}
+</style>
+<label class="check2">
+<input type="checkbox" name="check2" value="ハローワーク">ハローワーク
+</label>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[edit  left="210"  top="290"  width="250"  height="30"  size="20"  maxchars="200"  name="f.syokai2"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.check3{ position:absolute; left:50px; top:325px; width:140px; height: 40px; font-size: 20px; color:white;}
+</style>
+<label class="check3">
+<input type="checkbox" name="check3" value="相談支援">相談支援
+</label>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[edit  left="210"  top="325"  width="250"  height="30"  size="20"  maxchars="200"  name="f.syokai3"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.check4{ position:absolute; left:50px; top:360px; width:340px; height: 40px; font-size: 20px; color:white;}
+</style>
+<label class="check4">
+<input type="checkbox" name="check4" value="生活支援">障害者就業・生活支援センター
+</label>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[edit  left="210"  top="390"  width="250"  height="30"  size="20"  maxchars="200"  name="f.syokai4"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.check5{ position:absolute; left:50px; top:430px; width:340px; height: 40px; font-size: 20px; color:white;}
+</style>
+<label class="check5">
+<input type="checkbox" name="check5" value="その他">その他
+</label>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[edit  left="210"  top="425"  width="250"  height="30"  size="20"  maxchars="200"  name="f.syokai5"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
+</style>
+<textarea cols="29" rows="9" style="overflow:scroll;" id="mokuteki">
+[endhtml]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.lineid{resize: none; position:absolute; left:210px; top:570px; width:290px; height: 30px;  font-size:20px; }
+</style>
+<input type="text" class="lineid" id="lineid"  onInput="checkForm(this)">
+[endhtml]
+[_tb_end_tyrano_code]
+
+[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_62"  ]
+[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_63"  ]
 [tb_start_text mode=4 ]
 [font size=20]入力が終わったら[r]OKボタンを押してください[r][r][r][r]
 [_tb_end_text]
 
 *OK
 
-[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="30"  y="610"  name="img_29"  ]
+[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_29"  _clickable_img=""  ]
 [s  ]
 *確認
 
@@ -180,25 +239,73 @@ textarea#kikake {resize: none; position:absolute; left:42px; top:315px; font-siz
 [tb_start_tyrano_code]
 [iscript]
 const ta1 = document.getElementById("tel").value;
-const ta2 = document.getElementById("kengaku").value;
-const ta3 = document.getElementById("kikake").value;
-const ta4 = document.getElementById("age").value;
-const ta5 = document.getElementsByName("sex");
-const ta6 = document.getElementById("lineid").value;
+const ta2 = document.getElementsByName("sex");
+const ta3 = document.getElementById("age").value;
+const ta4 = document.getElementsByName("check1");
+const ta5 = document.getElementsByName("check2");
+const ta6 = document.getElementsByName("check3");
+const ta7 = document.getElementsByName("check4");
+const ta8 = document.getElementsByName("check5");
+const ta9 = document.getElementById("mokuteki").value;
+const ta10 = document.getElementById("lineid").value;
+// 電話番号
 f.tel=ta1;
-f.kengaku= ta2;
-f.kikake= ta3;
-f.age= ta4;
 // 性別の値を取得
+for ( var str="", i=ta2.length; i--; ) {
+if ( ta2[i].checked ) {
+str = ta2[i].value ;
+break ;
+}
+}
+f.sex= str;
+// 年齢
+f.age= ta3;
+// HP・学校の値を取得
+for ( var str="", i=ta4.length; i--; ) {
+if ( ta4[i].checked ) {
+str = ta4[i].value ;
+break ;
+}
+}
+f.check1=str;
+// ハローワーク
 for ( var str="", i=ta5.length; i--; ) {
 if ( ta5[i].checked ) {
 str = ta5[i].value ;
 break ;
 }
 }
-f.sex= str;
-f.lineid= ta6;
+f.check2=str;
+// 相談支援
+for ( var str="", i=ta6.length; i--; ) {
+if ( ta6[i].checked ) {
+str = ta6[i].value ;
+break ;
+}
+}
+f.check3=str;
+// 生活支援
+for ( var str="", i=ta7.length; i--; ) {
+if ( ta7[i].checked ) {
+str = ta7[i].value ;
+break ;
+}
+}
+f.check4=str;
+// その他
+for ( var str="", i=ta8.length; i--; ) {
+if ( ta8[i].checked ) {
+str = ta8[i].value ;
+break ;
+}
+}
+f.check5=str;
+// 目的
+f.mokuteki=ta9;
+// LINEID
+f.lineid= ta10;
 [endscript]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -240,8 +347,34 @@ f.lineid= ta6;
 
 [iscript]
 //文字列型で二次元配列のデータ
-data = [ ["名前","ふりがな","住所","電話","メール","目的","キッカケ","年齢","性別","所属","LINEID"],
-[f.name,  f.furigana, f.adress, "'" + f.tel, f.mail, f.kengaku, f.kikake, "'" + f.age, f.sex, f.syozok, "'" + f.lineid],
+data = [ ["名前",
+          "ふりがな",
+          "電話番号",
+          "性別",
+          "年齢",
+          "メール",
+          "住所",
+          "HP・学校","紹介１",
+          "ハローワーク","紹介２",
+          "相談支援","紹介３",
+          "生活支援","紹介４",
+          "その他","紹介５",
+          "目的",
+          "LINEID"],
+[         f.name,
+          f.furigana,
+          f.tel,
+          f.sex,
+          "'" + f.age,
+          f.mail,
+          f.adress,
+          f.check1,f.syokai1,
+          f.check2,f.syokai2,
+          f.check3,f.syokai3,
+          f.check4,f.syokai4,
+          f.check5,f.syokai5,
+          f.mokuteki,
+          "'" + f.lineid],
 ]
 console.log(data);
 //作った二次元配列をCSV文字列に直す。
@@ -288,7 +421,7 @@ delete link;
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[movie storage="apple.mp4" volume="100" skip=true loop=false]
+[movie storage="kunren.mp4" volume="100" skip=true loop=false]
 [_tb_end_tyrano_code]
 
 [cm  ]
