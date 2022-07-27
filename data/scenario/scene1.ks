@@ -1,4 +1,4 @@
-
+[_tb_system_call storage=system/_scene1.ks]
 
 [live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
 [bg  storage="office-chairs.jpg"  time="500"  ]
@@ -248,59 +248,33 @@ const ta10 = document.getElementById("lineid").value;
 // 電話番号
 f.tel=ta1;
 // 性別の値を取得
-for ( var str="", i=ta2.length; i--; ) {
-if ( ta2[i].checked ) {
-str = ta2[i].value ;
-break ;
-}
-}
-f.sex= str;
+f.sex= getValue(ta2);
 // 年齢
 f.age= ta3;
 // HP・学校の値を取得
-for ( var str="", i=ta4.length; i--; ) {
-if ( ta4[i].checked ) {
-str = ta4[i].value ;
-break ;
-}
-}
-f.check1=str;
+f.check1=getValue(ta4);
 // ハローワーク
-for ( var str="", i=ta5.length; i--; ) {
-if ( ta5[i].checked ) {
-str = ta5[i].value ;
-break ;
-}
-}
-f.check2=str;
+f.check2=getValue(ta5);
 // 相談支援
-for ( var str="", i=ta6.length; i--; ) {
-if ( ta6[i].checked ) {
-str = ta6[i].value ;
-break ;
-}
-}
-f.check3=str;
+f.check3=getValue(ta6);
 // 生活支援
-for ( var str="", i=ta7.length; i--; ) {
-if ( ta7[i].checked ) {
-str = ta7[i].value ;
-break ;
-}
-}
-f.check4=str;
+f.check4=getValue(ta7);
 // その他
-for ( var str="", i=ta8.length; i--; ) {
-if ( ta8[i].checked ) {
-str = ta8[i].value ;
-break ;
-}
-}
-f.check5=str;
+f.check5=getValue(ta8);
 // 目的
 f.mokuteki=ta9;
 // LINEID
 f.lineid= ta10;
+
+// チェックボックスの値を取得
+function getValue(arg) {
+for ( var str="", i=arg.length; i--; ) {
+if ( arg[i].checked ) {
+str = arg[i].value ;
+return str;
+}
+}
+}
 [endscript]
 
 [_tb_end_tyrano_code]
@@ -360,7 +334,7 @@ data = [ ["名前",
 "LINEID"],
 [         f.name,
 f.furigana,
-f.tel,
+"'" + f.tel,
 f.sex,
 "'" + f.age,
 f.mail,
