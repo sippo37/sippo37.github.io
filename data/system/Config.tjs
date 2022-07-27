@@ -5,7 +5,7 @@
 ;System.title=Practice
 ;projectID=Practice
 ;game_version=0.0
-;ScreenRatio=fit
+;ScreenRatio=fix
 ;patch_apply_auto=true
 ;ScreenCentering=true
 ;useCamera=true
