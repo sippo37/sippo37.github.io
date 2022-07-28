@@ -64,7 +64,7 @@
 入力してみてね[l][r]
 [_tb_end_text]
 
-[camera  time="600"  zoom="1"  wait="true"  y="0"  x="-0.5"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
+[camera  time="600"  zoom="1"  wait="true"  y="0"  x="0"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
 [tb_start_text mode=1 ]
 #
 [_tb_end_text]
@@ -79,7 +79,7 @@
 
 *個人情報
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_25"  x="-6"  _clickable_img=""  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_24"  x="-6"  _clickable_img=""  ]
 [tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="40"  y="80"  size="23"  color="0xffffff"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="85"  y="82"  size="20"  color="0xffffff"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
@@ -221,15 +221,15 @@ textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-s
 
 [_tb_end_tyrano_code]
 
-[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_62"  ]
-[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_63"  ]
+[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_61"  ]
+[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_62"  ]
 [tb_start_text mode=4 ]
 [font size=20]入力が終わったら[r]OKボタンを押してください[r][r][r][r]
 [_tb_end_text]
 
 *OK
 
-[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_29"  _clickable_img=""  ]
+[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_65"  _clickable_img=""  ]
 [s  ]
 *確認
 
@@ -384,20 +384,30 @@ delete link;
 あなたの名前は [emb exp="f.name"] さんですね。宜しくお願いします[p]
 [_tb_end_tyrano_code]
 
+[tb_start_text mode=1 ]
+#職員
+今からアップル梅田での一日の流れを動画で見て頂きます。[p]
+[_tb_end_text]
+
 *動画再生
 
-[tb_start_text mode=2 ]
+[glink  color="black"  storage="scene1.ks"  size="20"  x="112"  y="352"  width=""  height=""  text="動画再生"  _clickable_img=""  target="*動画再生開始"  ]
+[glink  color="black"  storage="scene1.ks"  size="20"  x="347"  y="352"  width=""  height=""  text="動画終了"  _clickable_img=""  target="*動画再生終了"  ]
+[tb_start_text mode=4 ]
 #職員
-今からアップル梅田での一日の流れを動画で見て頂きます。[l][r]
-それではご覧ください。[l][r]
+動画再生ボタンを押してください[r]
+見終わったら動画終了ボタンを押してください
 [_tb_end_text]
+
+[s  ]
+*動画再生開始
 
 [tb_start_tyrano_code]
 [movie storage="kunren.mp4" volume="100" skip=true loop=false]
 [_tb_end_tyrano_code]
 
-[cm  ]
-*undefined
+[jump  storage="scene1.ks"  target="*動画再生"  ]
+*動画再生終了
 
 [tb_start_text mode=1 ]
 #職員
