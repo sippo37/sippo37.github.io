@@ -6,7 +6,7 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_start_tyrano_code]
-[bgmovie storage="壁紙.mp4" ]
+[bgmovie storage="壁紙.mp4" time=0 ]
 [_tb_end_tyrano_code]
 
 [tb_image_show  time="1"  storage="default/ああああ.png"  width="542"  height="304"  x="751"  y="427"  _clickable_img=""  name="img_4"  ]
