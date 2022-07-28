@@ -216,8 +216,9 @@ textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-s
 <style type="text/css">
 .lineid{resize: none; position:absolute; left:210px; top:570px; width:290px; height: 30px;  font-size:20px; }
 </style>
-<input type="text" class="lineid" id="lineid"  onInput="checkForm(this)">
+<input type="tel" class="lineid" id="lineid"  onInput="checkForm(this)">
 [endhtml]
+
 [_tb_end_tyrano_code]
 
 [tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_62"  ]
@@ -379,7 +380,7 @@ delete link;
 [endscript]
 
 [tb_start_tyrano_code]
-#永井
+#職員
 あなたの名前は [emb exp="f.name"] さんですね。宜しくお願いします[p]
 [_tb_end_tyrano_code]
 
@@ -432,6 +433,6 @@ delete link;
 ありがとうございました[l][r]
 以上で私からのご案内は終わらせて頂きます[l][r]
 次は職員からの面談となります[l][r]
-呼び出しブザーを鳴らすか、職員に声をかけてください[l][r]
+職員に声をかけてください[l][r]
 [_tb_end_text]
 
