@@ -9,6 +9,9 @@
 [call storage="system/builder.ks"]
 [call storage="system/chara_define.ks"]
 
+;外部jsの読み込み
+[loadjs storage='original/test.js']
+
 ;live2D対応
 
 [plugin name="live2d"]
