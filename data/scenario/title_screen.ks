@@ -11,7 +11,7 @@
 [tb_image_show  time="1"  storage="default/コードウィンドウ②.png"  width="460"  height="443"  x="84"  y="432"  _clickable_img=""  name="img_6"  ]
 [tb_image_show  time="1"  storage="default/背景１.jpg"  width="543"  height="305"  x="383"  y="231"  _clickable_img=""  name="img_7"  ]
 [tb_start_tyrano_code]
-[bgmovie storage="haikei.mp4"]
+[bgmovie storage="kabegami.mp4"]
 [_tb_end_tyrano_code]
 
 [s  ]
