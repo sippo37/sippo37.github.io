@@ -17,6 +17,7 @@
 見学に来てくれてありがとう[p]
 [_tb_end_text]
 
+<<<<<<< HEAD
 [tb_start_text mode=1 ]
 #スタッフ
 まずは簡単に、就労移行支援と、アップル梅田についてご説明させていただきます[p]
@@ -80,6 +81,17 @@
 [_tb_end_tyrano_code]
 
 *個人情報
+=======
+[tb_keyconfig  flag="0"  ]
+[glink  color="btn_05_purple"  text="▶　ＰＬＡＹ"  x="577"  y="433"  size="20"  target="*開始"  width="153"  height="57"  _clickable_img=""  storage="title_screen.ks"  ]
+[tb_image_show  time="1"  storage="default/ああああ.png"  width="542"  height="304"  x="751"  y="427"  _clickable_img=""  name="img_4"  ]
+[tb_image_show  time="1"  storage="default/コードウィンドウ①.png"  width="470"  height="438"  x="787"  y="-10"  _clickable_img=""  name="img_5"  ]
+[tb_image_show  time="1"  storage="default/コードウィンドウ②.png"  width="460"  height="443"  x="84"  y="432"  _clickable_img=""  name="img_6"  ]
+[tb_image_show  time="1"  storage="default/背景１.jpg"  width="543"  height="305"  x="383"  y="231"  _clickable_img=""  name="img_7"  ]
+[layermode_movie  mode="screen"  speed="1"  volume="0"  loop="true"  time="1"  wait="true"  video="壁紙.mp4"  ]
+[s  ]
+*開始
+>>>>>>> 29180a2ebe7b73f34919091b488e77f4bab21fa8
 
 [tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_25"  x="-6"  _clickable_img=""  ]
 [tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
