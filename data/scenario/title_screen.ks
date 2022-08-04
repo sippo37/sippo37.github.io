@@ -6,6 +6,7 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_start_tyrano_code]
+[bgmovie storage="壁紙.mp4" ]
 [bgmovie storage="壁紙.webm" ]
 [_tb_end_tyrano_code]
 
