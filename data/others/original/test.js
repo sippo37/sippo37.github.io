@@ -1,9 +1,9 @@
 function checkForm($this)
 {
     var str=$this.value;
-    while(str.match(/[^A-Z^a-z\d\-]/))
+    while(str.match(/[^ -~｡-ﾟ]/))
     {
-        str=str.replace(/[^A-Z^a-z\d\-]/,"");
+        str=str.replace(/[^ -~｡-ﾟ]/,"");
     }
     $this.value=str;
 }

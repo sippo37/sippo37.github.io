@@ -2,4 +2,5 @@
 [preload  storage="./data/fgimage/default/kokuban2.png"  ]
 [preload  storage="./data/fgimage/default/qrcode.png"  ]
 [preload  storage="./data/fgimage/default/fukidashi.png"  ]
+[preload  storage="./data/fgimage/default/動画用ロゴ.png"  ]
 [return]

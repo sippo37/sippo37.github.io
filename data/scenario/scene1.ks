@@ -1,65 +1,65 @@
 
 
-[live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="職員"  ]
+[live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="スタッフ"  ]
 [bg  storage="office-chairs.jpg"  time="500"  ]
 [tb_show_message_window  ]
 [live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 ようこそ、アップル梅田へ！[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 見学に来てくれてありがとう[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#職員
-まずは、簡単に、就労移行支援と、アップル梅田について説明させていただきます[p]
+#スタッフ
+まずは簡単に、就労移行支援と、アップル梅田についてご説明させていただきます[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 就労移行支援について[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
-#職員
-「一般企業に就職したい」障がい者の方をサポートする福祉サービスです[l][r]
-利用者の得意にあった職場探しをサポートします[l][r]
+#スタッフ
+「一般企業に就職したい」障がいのある方をサポートするＩＴ特化型就労移行支援事業所です[l][r]
+ご利用される方の適正にあった就職活動をサポートします[l][r]
 
 [_tb_end_text]
 
 [cm  ]
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 アップル梅田について[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
-#職員
+#スタッフ
 アップル梅田では、「ひとりひとりのストーリーを大切に」の気持ちで[l][r]
 ２０１７年のオープン時から運営してきました。[l][r]
 ひとりひとり、進むスピード、働きたい仕事、知識、スキルには違いがありますが[l][r]
-スタッフと利用者の会話を通じて作り上げながら、支援をおこなっています。[l][r]
+スタッフと利用される方との会話を通じて面談等を行いながら、支援をおこなっています。[l][r]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
-#職員
+#スタッフ
 ざっと簡単に説明させていただきました。[l][r]
-アップル梅田のホームページもあるから良かったら見てくださいね[l][r]
+アップル梅田のホームページもありますから良かったら見てくださいね[l][r]
 [_tb_end_text]
 
 [cm  ]
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 次はあなたの事についても教えてほしいな[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
-#職員
+#スタッフ
 今から簡単な入力フォームが表示されるから[l][r]
 入力してみてね[l][r]
 [_tb_end_text]
@@ -79,7 +79,7 @@
 
 *個人情報
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_24"  x="-6"  _clickable_img=""  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_25"  x="-6"  _clickable_img=""  ]
 [tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="40"  y="80"  size="23"  color="0xffffff"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="85"  y="82"  size="20"  color="0xffffff"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
@@ -221,15 +221,15 @@ textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-s
 
 [_tb_end_tyrano_code]
 
-[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_61"  ]
-[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_62"  ]
+[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_62"  ]
+[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_63"  ]
 [tb_start_text mode=4 ]
 [font size=20]入力が終わったら[r]OKボタンを押してください[r][r][r][r]
 [_tb_end_text]
 
 *OK
 
-[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_65"  _clickable_img=""  ]
+[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_66"  _clickable_img=""  ]
 [s  ]
 *確認
 
@@ -282,13 +282,19 @@ return str;
 
 [tb_start_tyrano_code]
 [if exp=" f.name == '' "]
-[jump  storage="scene1.ks"  target="エラー"  ]
+[jump  storage="scene1.ks"  target="名前エラー"  ]
+[elsif exp=" f.furigana == '' "]
+[jump  storage="scene1.ks"  target="ふりがなエラー"  ]
+[elsif exp=" f.tel == '' "]
+[jump  storage="scene1.ks"  target="電話番号エラー"  ]
+[elsif exp=" f.adress == '' "]
+[jump  storage="scene1.ks"  target="住所エラー"  ]
 [else]
 [jump  storage="scene1.ks"  target="正常"  ]
 [endif]
 [_tb_end_tyrano_code]
 
-*エラー
+*名前エラー
 
 [tb_start_tyrano_code]
 [current layer="message0"]
@@ -296,6 +302,45 @@ return str;
 
 [tb_start_text mode=4 ]
 名前を入力してください
+[r][r][r][r][r]
+[_tb_end_text]
+
+[jump  storage="scene1.ks"  target="*OK"  ]
+[s  ]
+*ふりがなエラー
+
+[tb_start_tyrano_code]
+[current layer="message0"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=4 ]
+ふりがなを入力してください
+[r][r][r][r][r]
+[_tb_end_text]
+
+[jump  storage="scene1.ks"  target="*OK"  ]
+[s  ]
+*電話番号エラー
+
+[tb_start_tyrano_code]
+[current layer="message0"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=4 ]
+電話番号を入力してください
+[r][r][r][r][r]
+[_tb_end_text]
+
+[jump  storage="scene1.ks"  target="*OK"  ]
+[s  ]
+*住所エラー
+
+[tb_start_tyrano_code]
+[current layer="message0"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=4 ]
+住所を入力してください
 [r][r][r][r][r]
 [_tb_end_text]
 
@@ -311,9 +356,9 @@ return str;
 [tb_ptext_hide  time="0"  ]
 [tb_image_hide  time="1000"  ]
 [tb_show_message_window  ]
-[camera  time="600"  zoom="1.5"  wait="true"  y="-70"  x="100"  rotate="0"  layer="0"  ]
+[camera  time="600"  zoom="1.5"  wait="true"  y="-70"  x="120"  rotate="0"  layer="0"  ]
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 入力ありがとう♪[p]
 [_tb_end_text]
 
@@ -380,21 +425,23 @@ delete link;
 [endscript]
 
 [tb_start_tyrano_code]
-#職員
+#スタッフ
 あなたの名前は [emb exp="f.name"] さんですね。宜しくお願いします[p]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 今からアップル梅田での一日の流れを動画で見て頂きます。[p]
 [_tb_end_text]
 
 *動画再生
 
-[glink  color="black"  storage="scene1.ks"  size="20"  x="112"  y="352"  width=""  height=""  text="動画再生"  _clickable_img=""  target="*動画再生開始"  ]
-[glink  color="black"  storage="scene1.ks"  size="20"  x="347"  y="352"  width=""  height=""  text="動画終了"  _clickable_img=""  target="*動画再生終了"  ]
+[tb_image_show  time="1"  storage="default/kokuban2.png"  width="702"  height="591"  y="7"  name="img_95"  x="-15"  _clickable_img=""  ]
+[tb_image_show  time="1"  storage="default/動画用ロゴ.png"  width="535"  height="363"  x="5"  y="12"  _clickable_img=""  name="img_96"  ]
+[glink  color="btn_07_purple"  storage="scene1.ks"  size="20"  x="112"  y="330"  width=""  height=""  text="動画再生"  _clickable_img=""  target="*動画再生開始"  ]
+[glink  color="btn_07_red"  storage="scene1.ks"  size="20"  x="347"  y="330"  width=""  height=""  text="動画終了"  _clickable_img=""  target="*動画再生終了"  ]
 [tb_start_text mode=4 ]
-#職員
+#スタッフ
 動画再生ボタンを押してください[r]
 見終わったら動画終了ボタンを押してください
 [_tb_end_text]
@@ -410,22 +457,22 @@ delete link;
 *動画再生終了
 
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 ご視聴ありがとうございました。[p]
 [_tb_end_text]
 
 *作品
 
 [tb_start_text mode=2 ]
-#職員
-続いてアップル梅田の利用者さんが製作したプログラムを紹介します。[l][r]
+#スタッフ
+続いてアップル梅田の利用されている方が製作したプログラムをご紹介します。[l][r]
 新しいページが開くのでそちらをみてください。[l][r]
 また見終わったら、こちらのページに戻ってきてください[l][r]
 [_tb_end_text]
 
 [cm  ]
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 それでは作品をご覧ください[p]
 [_tb_end_text]
 
@@ -434,15 +481,15 @@ delete link;
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
-#職員
+#スタッフ
 作品を見終わったら、こちらのページに戻ってきてください[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
-#職員
+#スタッフ
 ありがとうございました[l][r]
 以上で私からのご案内は終わらせて頂きます[l][r]
-次は職員からの面談となります[l][r]
-職員に声をかけてください[l][r]
+次はスタッフとの面談となります[l][r]
+スタッフに声をかけてください[l][r]
 [_tb_end_text]
 
