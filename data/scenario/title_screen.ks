@@ -7,7 +7,7 @@
 [tb_keyconfig  flag="0"  ]
 [glink  color="btn_05_purple"  text="▶　START"  x="577"  y="433"  size="20"  target="*開始"  width="153"  height="57"  _clickable_img=""  storage="title_screen.ks"  ]
 [tb_start_tyrano_code]
-[bgmovie storage="壁紙.mp4" ]
+[bgmovie storage="壁紙.webm" ]
 [_tb_end_tyrano_code]
 
 [tb_image_show  time="1"  storage="default/ああああ.png"  width="542"  height="304"  x="751"  y="427"  _clickable_img=""  name="img_4"  ]
