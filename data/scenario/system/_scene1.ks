@@ -1,3 +1,6 @@
-[preload  storage="./data/bgimage/BG06a_80.jpg"  ]
+[preload  storage="./data/bgimage/office-chairs.jpg"  ]
 [preload  storage="./data/fgimage/default/kokuban2.png"  ]
+[preload  storage="./data/fgimage/default/qrcode.png"  ]
+[preload  storage="./data/fgimage/default/fukidashi.png"  ]
+[preload  storage="./data/fgimage/default/動画用ロゴ.png"  ]
 [return]
