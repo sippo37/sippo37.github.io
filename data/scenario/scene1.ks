@@ -104,7 +104,7 @@
 <style type="text/css">
 .tel{resize: none; position:absolute; left:230px; top:150px; width:205px; height: 30px;  font-size:20px; }
 </style>
-<input type="tel" class="tel" id="tel" onInput="checkForm(this)">
+<input type="tel" class="tel" id="tel" maxlength="15" onInput="checkForm(this)">
 [endhtml]
 [_tb_end_tyrano_code]
 
@@ -130,13 +130,22 @@
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.age{resize: none; position:absolute; left:540px; top:115px; width:50px; height: 30px;  font-size:20px; }
+.age{resize: none; position:absolute; left:540px; top:115px; width:60px; height: 30px;  font-size:20px; }
 </style>
-<input type="number" class="age" id="age" onInput="checkForm(this)">
+<input type="number" class="age" id="age" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+  maxlength="3">
 [endhtml]
 [_tb_end_tyrano_code]
 
-[edit  left="540"  top="150"  width="250"  height="30"  size="20"  maxchars="30"  name="f.mail"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.mail{resize: none; position:absolute; left:540px; top:150px; width:250px; height: 30px;  font-size:20px; }
+</style>
+<input type="mail" class="mail" id="mail" maxlength="260" onInput="checkForm(this)">
+[endhtml]
+[_tb_end_tyrano_code]
+
 [edit  left="230"  top="185"  width="560"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
 [tb_start_tyrano_code]
 [html]
@@ -207,16 +216,16 @@
 <style type="text/css">
 textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
 </style>
-<textarea cols="29" rows="9" style="overflow:scroll;" id="mokuteki">
+<textarea cols="29" rows="9"  maxlength="500"  style="overflow:scroll;" id="mokuteki">
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.lineid{resize: none; position:absolute; left:210px; top:570px; width:290px; height: 30px;  font-size:20px; }
+.lineid{resize: none; position:absolute; left:210px; top:570px; width:334px; height: 30px;  font-size:20px; }
 </style>
-<input type="tel" class="lineid" id="lineid"  onInput="checkForm(this)">
+<input type="tel" class="lineid" id="lineid"  maxlength="30" onInput="checkForm(this)">
 [endhtml]
 
 [_tb_end_tyrano_code]
@@ -239,33 +248,36 @@ textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-s
 const ta1 = document.getElementById("tel").value;
 const ta2 = document.getElementsByName("sex");
 const ta3 = document.getElementById("age").value;
-const ta4 = document.getElementsByName("check1");
-const ta5 = document.getElementsByName("check2");
-const ta6 = document.getElementsByName("check3");
-const ta7 = document.getElementsByName("check4");
-const ta8 = document.getElementsByName("check5");
-const ta9 = document.getElementById("mokuteki").value;
-const ta10 = document.getElementById("lineid").value;
+const ta4 = document.getElementById("mail").value;
+const ta5 = document.getElementsByName("check1");
+const ta6 = document.getElementsByName("check2");
+const ta7 = document.getElementsByName("check3");
+const ta8 = document.getElementsByName("check4");
+const ta9 = document.getElementsByName("check5");
+const ta10 = document.getElementById("mokuteki").value;
+const ta11 = document.getElementById("lineid").value;
 // 電話番号
 f.tel=ta1;
 // 性別の値を取得
 f.sex= getValue(ta2);
 // 年齢
 f.age= ta3;
+// メール
+f.mail= ta4;
 // HP・学校の値を取得
-f.check1=getValue(ta4);
+f.check1=getValue(ta5);
 // ハローワーク
-f.check2=getValue(ta5);
+f.check2=getValue(ta6);
 // 相談支援
-f.check3=getValue(ta6);
+f.check3=getValue(ta7);
 // 生活支援
-f.check4=getValue(ta7);
+f.check4=getValue(ta8);
 // その他
-f.check5=getValue(ta8);
+f.check5=getValue(ta9);
 // 目的
-f.mokuteki=ta9;
+f.mokuteki=ta10;
 // LINEID
-f.lineid= ta10;
+f.lineid= ta11;
 
 // チェックボックスの値を取得
 function getValue(arg) {
