@@ -7,12 +7,6 @@
 [tb_clear_images]
 
 [tb_keyconfig  flag="0"  ]
-[tb_show_message_window  ]
-[tb_start_text mode=1 ]
-クリック[p]
-[_tb_end_text]
-
-[tb_hide_message_window  ]
 [tb_start_tyrano_code]
 [bgmovie storage="壁紙.mp4" ]
 [_tb_end_tyrano_code]
