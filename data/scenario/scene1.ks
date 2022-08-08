@@ -1,9 +1,8 @@
 
 
-[live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="スタッフ"  ]
 [bg  storage="office-chairs.jpg"  time="500"  ]
 [tb_show_message_window  ]
-[live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
+[chara_show  name="うえだ"  time="0"  wait="true"  storage="chara/4/上田さん.png"  width="783"  height="1044"  left="528"  top="1"  reflect="false"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
 [tb_start_text mode=1 ]
 #スタッフ
@@ -65,13 +64,13 @@
 [_tb_end_text]
 
 [camera  time="600"  zoom="1"  wait="true"  y="0"  x="0"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
+[chara_move  name="うえだ"  anim="true"  time="500"  effect="easeInQuad"  wait="true"  left="711"  top="157"  width="676"  height="902"  ]
 [tb_start_text mode=1 ]
 #
 [_tb_end_text]
 
 [cm  ]
 [tb_hide_message_window  ]
-[live2d_mod  name="nagaisan"  x="0.64"  y="-0.38"  scale="1"  ]
 [tb_start_tyrano_code]
 @layopt layer=message0 visible=true
 [position layer=message0 width=370 height=200 top=20 left=900 color=black opacity=180 radius=5]
@@ -133,7 +132,7 @@
 .age{resize: none; position:absolute; left:540px; top:115px; width:60px; height: 30px;  font-size:20px; }
 </style>
 <input type="number" class="age" id="age" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-  maxlength="3">
+maxlength="3">
 [endhtml]
 [_tb_end_tyrano_code]
 

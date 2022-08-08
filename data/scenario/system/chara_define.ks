@@ -5,6 +5,8 @@
 [chara_new  name="おだ"  jname="おだ"  storage="chara/2/18.10.02e.png"  ]
 ;りんご
 [chara_new  name="りんご"  jname="りんご"  storage="chara/3/ringo.png"  ]
+;うえだ
+[chara_new  name="うえだ"  jname="うえだ"  storage="chara/4/上田さん.png"  ]
 
 ;=========変数宣言部分 
 [iscript] 
