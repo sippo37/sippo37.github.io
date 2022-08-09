@@ -213,7 +213,7 @@ maxlength="3">
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
+textarea#mokuteki{width: 310px; resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
 </style>
 <textarea cols="29" rows="9"  maxlength="500"  style="overflow:scroll;" id="mokuteki">
 [endhtml]
