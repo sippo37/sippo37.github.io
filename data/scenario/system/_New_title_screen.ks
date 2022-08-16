@@ -1,5 +1,0 @@
-[preload  storage="./data/fgimage/default/ああああ.png"  ]
-[preload  storage="./data/fgimage/default/コードウィンドウ①.png"  ]
-[preload  storage="./data/fgimage/default/コードウィンドウ②.png"  ]
-[preload  storage="./data/fgimage/default/背景１.jpg"  ]
-[return]

@@ -1,9 +1,8 @@
 
 
-[live2d_new  model_id="nagaisan"  breath="true"  lip_time="50"  lip="true"  jname="スタッフ"  ]
 [bg  storage="office-chairs.jpg"  time="500"  ]
 [tb_show_message_window  ]
-[live2d_show  name="nagaisan"  x="0.32"  y="-0.29"  scale="1.39"  ]
+[chara_show  name="うえだ"  time="0"  wait="true"  storage="chara/4/上田さん.png"  width="783"  height="1044"  left="528"  top="1"  reflect="false"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
 [tb_start_text mode=1 ]
 #スタッフ
@@ -20,30 +19,21 @@
 まずは簡単に、就労移行支援と、アップル梅田についてご説明させていただきます[p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
+[tb_start_text mode=4 ]
 #スタッフ
-就労移行支援について[p]
-[_tb_end_text]
-
-[tb_start_text mode=2 ]
-#スタッフ
-「一般企業に就職したい」障がいのある方をサポートするＩＴ特化型就労移行支援事業所です[l][r]
-ご利用される方の適正にあった就職活動をサポートします[l][r]
+就労移行支援について[r]
+「一般企業に就職したい」障がいのある方をサポートするＩＴ特化型就労移行支援事業所です[r]
+ご利用される方の適正にあった就職活動をサポートします[p]
 
 [_tb_end_text]
 
 [cm  ]
-[tb_start_text mode=1 ]
+[tb_start_text mode=4 ]
 #スタッフ
-アップル梅田について[p]
-[_tb_end_text]
-
-[tb_start_text mode=2 ]
-#スタッフ
-アップル梅田では、「ひとりひとりのストーリーを大切に」の気持ちで[l][r]
-２０１７年のオープン時から運営してきました。[l][r]
-ひとりひとり、進むスピード、働きたい仕事、知識、スキルには違いがありますが[l][r]
-スタッフと利用される方との会話を通じて面談等を行いながら、支援をおこなっています。[l][r]
+アップル梅田について[r]
+アップル梅田では、「ひとりひとりのストーリーを大切に」の気持ちで[r]
+ひとりひとり、進むスピード、働きたい仕事、知識、スキルには違いがありますが[r]
+スタッフと利用される方との会話を通じて面談等を行いながら、支援をおこなっています。[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
@@ -65,13 +55,13 @@
 [_tb_end_text]
 
 [camera  time="600"  zoom="1"  wait="true"  y="0"  x="0"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
+[chara_move  name="うえだ"  anim="true"  time="500"  effect="easeInQuad"  wait="true"  left="711"  top="157"  width="676"  height="902"  ]
 [tb_start_text mode=1 ]
 #
 [_tb_end_text]
 
 [cm  ]
 [tb_hide_message_window  ]
-[live2d_mod  name="nagaisan"  x="0.64"  y="-0.38"  scale="1"  ]
 [tb_start_tyrano_code]
 @layopt layer=message0 visible=true
 [position layer=message0 width=370 height=200 top=20 left=900 color=black opacity=180 radius=5]
@@ -79,7 +69,7 @@
 
 *個人情報
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_25"  x="-6"  _clickable_img=""  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_24"  x="-6"  _clickable_img=""  ]
 [tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="40"  y="80"  size="23"  color="0xffffff"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="85"  y="82"  size="20"  color="0xffffff"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
@@ -104,7 +94,7 @@
 <style type="text/css">
 .tel{resize: none; position:absolute; left:230px; top:150px; width:205px; height: 30px;  font-size:20px; }
 </style>
-<input type="tel" class="tel" id="tel" onInput="checkForm(this)">
+<input type="tel" class="tel" id="tel" maxlength="15" onInput="checkForm(this)">
 [endhtml]
 [_tb_end_tyrano_code]
 
@@ -130,13 +120,22 @@
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.age{resize: none; position:absolute; left:540px; top:115px; width:50px; height: 30px;  font-size:20px; }
+.age{resize: none; position:absolute; left:540px; top:115px; width:60px; height: 30px;  font-size:20px; }
 </style>
-<input type="number" class="age" id="age" onInput="checkForm(this)">
+<input type="number" class="age" id="age" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+maxlength="3">
 [endhtml]
 [_tb_end_tyrano_code]
 
-[edit  left="540"  top="150"  width="250"  height="30"  size="20"  maxchars="30"  name="f.mail"  ]
+[tb_start_tyrano_code]
+[html]
+<style type="text/css">
+.mail{resize: none; position:absolute; left:540px; top:150px; width:250px; height: 30px;  font-size:20px; }
+</style>
+<input type="mail" class="mail" id="mail" maxlength="260" onInput="checkForm(this)">
+[endhtml]
+[_tb_end_tyrano_code]
+
 [edit  left="230"  top="185"  width="560"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
 [tb_start_tyrano_code]
 [html]
@@ -205,31 +204,31 @@
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
+textarea#mokuteki{width: 310px; height: 190px; resize: none; position:absolute; left:480px; top:255px; font-size:20px; padding: 5px 0px 5px 1px;}
 </style>
-<textarea cols="29" rows="9" style="overflow:scroll;" id="mokuteki">
+<textarea cols="29" rows="9"  maxlength="500"  style="overflow:scroll;" id="mokuteki">
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.lineid{resize: none; position:absolute; left:210px; top:570px; width:290px; height: 30px;  font-size:20px; }
+.lineid{resize: none; position:absolute; left:210px; top:570px; width:334px; height: 30px;  font-size:20px; }
 </style>
-<input type="tel" class="lineid" id="lineid"  onInput="checkForm(this)">
+<input type="tel" class="lineid" id="lineid"  maxlength="30" onInput="checkForm(this)">
 [endhtml]
 
 [_tb_end_tyrano_code]
 
-[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_62"  ]
-[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_63"  ]
+[tb_image_show  time="1"  storage="default/qrcode.png"  width="108"  height="108"  x="60"  y="525"  _clickable_img=""  name="img_61"  ]
+[tb_image_show  time="1"  storage="default/fukidashi.png"  width="384"  height="91"  x="410"  y="468"  _clickable_img=""  name="img_62"  ]
 [tb_start_text mode=4 ]
 [font size=20]入力が終わったら[r]OKボタンを押してください[r][r][r][r]
 [_tb_end_text]
 
 *OK
 
-[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_66"  _clickable_img=""  ]
+[button  storage="scene1.ks"  target="*確認"  graphic="config/button_unread_ok.png"  width="125"  height="35"  x="42"  y="658"  name="img_65"  _clickable_img=""  ]
 [s  ]
 *確認
 
@@ -239,33 +238,36 @@ textarea#mokuteki{resize: none; position:absolute; left:480px; top:255px; font-s
 const ta1 = document.getElementById("tel").value;
 const ta2 = document.getElementsByName("sex");
 const ta3 = document.getElementById("age").value;
-const ta4 = document.getElementsByName("check1");
-const ta5 = document.getElementsByName("check2");
-const ta6 = document.getElementsByName("check3");
-const ta7 = document.getElementsByName("check4");
-const ta8 = document.getElementsByName("check5");
-const ta9 = document.getElementById("mokuteki").value;
-const ta10 = document.getElementById("lineid").value;
+const ta4 = document.getElementById("mail").value;
+const ta5 = document.getElementsByName("check1");
+const ta6 = document.getElementsByName("check2");
+const ta7 = document.getElementsByName("check3");
+const ta8 = document.getElementsByName("check4");
+const ta9 = document.getElementsByName("check5");
+const ta10 = document.getElementById("mokuteki").value;
+const ta11 = document.getElementById("lineid").value;
 // 電話番号
 f.tel=ta1;
 // 性別の値を取得
 f.sex= getValue(ta2);
 // 年齢
 f.age= ta3;
+// メール
+f.mail= ta4;
 // HP・学校の値を取得
-f.check1=getValue(ta4);
+f.check1=getValue(ta5);
 // ハローワーク
-f.check2=getValue(ta5);
+f.check2=getValue(ta6);
 // 相談支援
-f.check3=getValue(ta6);
+f.check3=getValue(ta7);
 // 生活支援
-f.check4=getValue(ta7);
+f.check4=getValue(ta8);
 // その他
-f.check5=getValue(ta8);
+f.check5=getValue(ta9);
 // 目的
-f.mokuteki=ta9;
+f.mokuteki=ta10;
 // LINEID
-f.lineid= ta10;
+f.lineid= ta11;
 
 // チェックボックスの値を取得
 function getValue(arg) {
@@ -436,8 +438,8 @@ delete link;
 
 *動画再生
 
-[tb_image_show  time="1"  storage="default/kokuban2.png"  width="702"  height="591"  y="7"  name="img_95"  x="-15"  _clickable_img=""  ]
-[tb_image_show  time="1"  storage="default/動画用ロゴ.png"  width="535"  height="363"  x="5"  y="12"  _clickable_img=""  name="img_96"  ]
+[tb_image_show  time="1"  storage="default/kokuban2.png"  width="702"  height="591"  y="7"  name="img_103"  x="-15"  _clickable_img=""  ]
+[tb_image_show  time="1"  storage="default/動画用ロゴ.png"  width="561"  height="388"  x="34"  y="24"  _clickable_img=""  name="img_96"  ]
 [glink  color="btn_07_purple"  storage="scene1.ks"  size="20"  x="112"  y="330"  width=""  height=""  text="動画再生"  _clickable_img=""  target="*動画再生開始"  ]
 [glink  color="btn_07_red"  storage="scene1.ks"  size="20"  x="347"  y="330"  width=""  height=""  text="動画終了"  _clickable_img=""  target="*動画再生終了"  ]
 [tb_start_text mode=4 ]
