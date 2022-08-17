@@ -71,13 +71,13 @@
 
 *個人情報
 
-[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_24"  x="-6"  _clickable_img=""  ]
+[tb_image_show  time="1000"  storage="default/kokuban2.png"  width="849"  height="716"  y="5"  name="img_21"  x="-6"  _clickable_img=""  ]
 [tb_ptext_show  x="25"  y="50"  size="23"  color="0xffffff"  time="1"  text="●プロフィール"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="40"  y="80"  size="23"  color="0xffffff"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="85"  y="82"  size="20"  color="0xffffff"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="115"  size="23"  color="0xffffff"  time="1"  text="ふりがな"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="150"  size="23"  color="0xffffff"  time="1"  text="電話番号"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="40"  y="185"  size="23"  color="0xffffff"  time="1"  text="住所"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="80"  size="23"  color="0xff9999"  time="1"  text="氏名"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="85"  y="82"  size="20"  color="0xff9999"  time="1"  text="（フルネーム）"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="115"  size="23"  color="0xff9999"  time="1"  text="ふりがな"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="150"  size="23"  color="0xff9999"  time="1"  text="電話番号"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="40"  y="185"  size="23"  color="0xff9999"  time="1"  text="住所"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="450"  y="80"  size="23"  color="0xffffff"  time="1"  text="性別"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="450"  y="115"  size="23"  color="0xffffff"  time="1"  text="年齢"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="450"  y="150"  size="23"  color="0xffffff"  time="1"  text="メール"  face="sans-serif,'メイリオ'"  ]
