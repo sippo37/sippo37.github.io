@@ -13,7 +13,4 @@
 
 */
 
-/* レイヤーモード 背景より上 立ち絵より下 */
-.layer_blend_haikei_no_ue{
-	z-index: 0 !important;
-}
+

@@ -14,7 +14,6 @@ f['name']='';
 f['furigana']=''; 
 f['tel']=''; 
 f['sex']=''; 
-f['age']=''; 
 f['mail']=''; 
 f['adress']=''; 
 f['check1']=''; 
@@ -29,4 +28,5 @@ f['check5']='';
 f['syokai5']=''; 
 f['mokuteki']=''; 
 f['lineid']=''; 
+f['birthday']=''; 
 [endscript] 

@@ -11,7 +11,7 @@
 
 [tb_start_text mode=1 ]
 #スタッフ
-見学に来てくれてありがとう[p]
+見学に来てくれてありがとうございます。[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
@@ -39,19 +39,19 @@
 [tb_start_text mode=2 ]
 #スタッフ
 ざっと簡単に説明させていただきました。[l][r]
-アップル梅田のホームページもありますから良かったら見てくださいね[l][r]
+アップル梅田のホームページもありますから良かったら見てください。[l][r]
 [_tb_end_text]
 
 [cm  ]
 [tb_start_text mode=1 ]
 #スタッフ
-次はあなたの事についても教えてほしいな[p]
+次はあなたの事についても教えてほしいです。[p]
 [_tb_end_text]
 
 [tb_start_text mode=2 ]
 #スタッフ
-今から簡単な入力フォームが表示されるから[l][r]
-入力してみてね[l][r]
+今から簡単な入力フォームを表示するので[l][r]
+入力してみてください。[l][r]
 [_tb_end_text]
 
 [camera  time="600"  zoom="1"  wait="true"  y="0"  x="0"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
@@ -77,8 +77,8 @@
 [tb_ptext_show  x="40"  y="150"  size="23"  color="0xff9999"  time="1"  text="電話番号"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="40"  y="185"  size="23"  color="0xff9999"  time="1"  text="住所"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="450"  y="80"  size="23"  color="0xffffff"  time="1"  text="性別"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="450"  y="115"  size="23"  color="0xffffff"  time="1"  text="年齢"  face="sans-serif,'メイリオ'"  ]
-[tb_ptext_show  x="450"  y="150"  size="23"  color="0xffffff"  time="1"  text="メール"  face="sans-serif,'メイリオ'"  ]
+[tb_ptext_show  x="450"  y="115"  size="23"  color="0xff9999"  time="1"  text="生年月日"  face="sans-serif,'メイリオ'"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="450"  y="150"  size="23"  color="0xff9999"  time="1"  text="メール"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="25"  y="220"  size="23"  color="0xffffff"  time="1"  text="●アップル梅田を知ったきっかけ"  face="sans-serif,'メイリオ'"  ]
 [tb_ptext_show  x="370"  y="223"  size="20"  color="0xffffff"  time="1"  text="（紹介先）"  anim="false"  face="sans-serif,'メイリオ'"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="470"  y="220"  size="23"  color="0xffffff"  time="1"  text="●アップル梅田を利用する目的"  face="sans-serif,'メイリオ'"  ]
@@ -98,6 +98,7 @@
 [endhtml]
 [_tb_end_tyrano_code]
 
+[edit  left="230"  top="185"  width="560"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
@@ -120,23 +121,22 @@
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.age{resize: none; position:absolute; left:540px; top:115px; width:60px; height: 30px;  font-size:20px; }
+.birthday{resize: none; position:absolute; left:550px; top:115px; width:170px; height: 30px;  font-size:20px; }
 </style>
-<input type="number" class="age" id="age" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-maxlength="3">
+<input type="date" class="birthday" id="birthday" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+maxlength="10">
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
-.mail{resize: none; position:absolute; left:540px; top:150px; width:250px; height: 30px;  font-size:20px; }
+.mail{resize: none; position:absolute; left:550px; top:150px; width:240px; height: 30px;  font-size:20px; }
 </style>
 <input type="mail" class="mail" id="mail" maxlength="260" onInput="checkForm(this)">
 [endhtml]
 [_tb_end_tyrano_code]
 
-[edit  left="230"  top="185"  width="560"  height="30"  size="20"  maxchars="200"  name="f.adress"  ]
 [tb_start_tyrano_code]
 [html]
 <style type="text/css">
@@ -237,7 +237,7 @@ textarea#mokuteki{width: 310px; height: 190px; resize: none; position:absolute; 
 [iscript]
 const ta1 = document.getElementById("tel").value;
 const ta2 = document.getElementsByName("sex");
-const ta3 = document.getElementById("age").value;
+const ta3 = document.getElementById("birthday").value;
 const ta4 = document.getElementById("mail").value;
 const ta5 = document.getElementsByName("check1");
 const ta6 = document.getElementsByName("check2");
@@ -250,8 +250,8 @@ const ta11 = document.getElementById("lineid").value;
 f.tel=ta1;
 // 性別の値を取得
 f.sex= getValue(ta2);
-// 年齢
-f.age= ta3;
+// 生年月日
+f.birthday= ta3;
 // メール
 f.mail= ta4;
 // HP・学校の値を取得
@@ -291,6 +291,8 @@ return str;
 [jump  storage="scene1.ks"  target="電話番号エラー"  ]
 [elsif exp=" f.adress == '' "]
 [jump  storage="scene1.ks"  target="住所エラー"  ]
+[elsif exp=" f.birthday == '' "]
+[jump  storage="scene1.ks"  target="生年月日エラー"  ]
 [else]
 [jump  storage="scene1.ks"  target="正常"  ]
 [endif]
@@ -348,6 +350,19 @@ return str;
 
 [jump  storage="scene1.ks"  target="*OK"  ]
 [s  ]
+*生年月日エラー
+
+[tb_start_tyrano_code]
+[current layer="message0"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=4 ]
+生年月日を入力してください
+[r][r][r][r][r]
+[_tb_end_text]
+
+[jump  storage="scene1.ks"  target="*OK"  ]
+[s  ]
 *正常
 
 [cm  ]
@@ -370,7 +385,7 @@ data = [ ["名前",
 "ふりがな",
 "電話番号",
 "性別",
-"年齢",
+"生年月日",
 "メール",
 "住所",
 "HP・学校","紹介１",
@@ -384,7 +399,7 @@ data = [ ["名前",
 f.furigana,
 "'" + f.tel,
 f.sex,
-"'" + f.age,
+f.birthday,
 f.mail,
 f.adress,
 f.check1,f.syokai1,
