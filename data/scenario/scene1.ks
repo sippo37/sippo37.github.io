@@ -4,9 +4,10 @@
 [tb_show_message_window  ]
 [chara_show  name="うえだ"  time="0"  wait="true"  storage="chara/4/上田さん.png"  width="783"  height="1044"  left="528"  top="1"  reflect="false"  ]
 [camera  time="700"  zoom="1.3"  wait="true"  x="40"  ease_type="ease"  layer="layer_camera"  y="0"  rotate="0"  ]
-[tb_start_text mode=1 ]
+[tb_start_text mode=4 ]
 #スタッフ
-ようこそ、アップル梅田へ！[p]
+ようこそ、アップル梅田へ！[r]
+（次のページに進むには、マウスクリックまたは画面タップをしてください）[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
@@ -43,15 +44,10 @@
 [_tb_end_text]
 
 [cm  ]
-[tb_start_text mode=1 ]
+[tb_start_text mode=4 ]
 #スタッフ
-次はあなたの事についても教えてほしいです。[p]
-[_tb_end_text]
-
-[tb_start_text mode=2 ]
-#スタッフ
-今から簡単な入力フォームを表示するので[l][r]
-入力してみてください。[l][r]
+今から入力フォームを表示します[r]
+次の面談で使用するので、あなたの事について教えていただけますか[p]
 [_tb_end_text]
 
 [camera  time="600"  zoom="1"  wait="true"  y="0"  x="0"  rotate="0"  layer="layer_camera"  ease_type="ease"  ]
@@ -376,7 +372,7 @@ return str;
 [camera  time="600"  zoom="1.5"  wait="true"  y="-70"  x="120"  rotate="0"  layer="0"  ]
 [tb_start_text mode=1 ]
 #スタッフ
-入力ありがとう♪[p]
+入力ありがとうございました。[p]
 [_tb_end_text]
 
 [iscript]
